@@ -5,7 +5,7 @@ import java.util.Scanner;
 //  Input           :   Integer ,Integer
 //  Output          :   Integer
 //  Description     :   Perform addition
-//  Date            :   12/10/2026
+//  Date            :   20/10/2026
 //  Author          :   Sanika Sunil Jitkar
 //
 //---------------------------------------------------------------------------------------------------
