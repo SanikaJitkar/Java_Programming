@@ -16,7 +16,7 @@ class Digit
         }  
     }
 }
-class program122
+class program23
 {
     public static void main(String A[])
     {
