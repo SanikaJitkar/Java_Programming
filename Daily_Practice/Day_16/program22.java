@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class program119
+class program22
 {
     public static void main(String A[])
     {
