@@ -1,30 +1,36 @@
 import java.util.Scanner;
 
-class program24
+class PatternPrint
 {
-    public static void main(String A[])
+    public void Pattern(int iRow,int iCol)
     {
-        int iNo = 175902;
+        int i = 0, j = 0;
+        for(i = 1;i <= iRow;i++)
+        {
+            for(j = 1;j <= iCol;j++)
+            {
+                System.out.print("*");
+            }
+            System.out.println("\n");
+        }
+    }
 
-        System.out.println("Number is: "+iNo);//175902
+}
 
-        System.out.println(iNo % 10);   //2
-        iNo = iNo/10;                   //17590
-        System.out.println("Number is: "+iNo);//17590
+class program25
+{
+    public static void main (String A[])
+    {
+        int iValue1 = 0,iValue2 = 0;
+        Scanner scanner = new Scanner(System.in);
+        PatternPrint patternPrint = new PatternPrint();
 
-        System.out.println(iNo % 10);   //0
-        iNo = iNo/10;                   //1759
-        System.out.println("Number is: "+iNo);//1759
+        System.out.println("Enter number of rows and coloum:");
+        iValue1 = scanner.nextInt();
+        iValue2 = scanner.nextInt();
 
-        System.out.println(iNo % 10);   //9
-        iNo = iNo/10;                   //175
-        System.out.println("Number is: "+iNo);//175
+        patternPrint.Pattern(iValue1,iValue2);
 
-        System.out.println(iNo % 10);   //5
-        iNo = iNo/10;                   //17
-        System.out.println("Number is: "+iNo);//17
-
-        
 
     }
 }
