@@ -1,22 +1,34 @@
 import java.util.Scanner;
 
+class Number
+{
+    public int Factorial(int iNo)
+    {
+        int iCnt = 0;
+        int iFact = 0;
+
+        for(iCnt = 1,iFact = 1; iCnt <= iNo; iCnt++)
+        {
+            iFact = iFact * iCnt;
+        }
+
+        return iFact;
+    }
+}
 class program22
 {
     public static void main(String A[])
     {
-        int iNo = 7592;
+        int iValue = 0 , iRet = 0;
+        Scanner scanner = new Scanner(System.in);
+        Number number = new Number();
 
-        System.out.println(iNo % 10);   //2
-        iNo = iNo/10;                   //759
+        System.out.println("Enter Number:");
+        iValue = scanner.nextInt();
 
-        System.out.println(iNo % 10);   //9
-        iNo = iNo/10;                   //75
+        iRet = number.Factorial(iValue);
 
-        System.out.println(iNo % 10);   //5
-        iNo = iNo/10;                   //7
-
-        System.out.println(iNo % 10);   //7
-        iNo = iNo/10;                   //0
+        System.out.println("Factors of number:"+iRet);
 
     }
 }
